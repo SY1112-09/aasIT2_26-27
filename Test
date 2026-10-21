@@ -1,0 +1,23 @@
+program1_kode = "DVFJ60000121"
+program1_bærertype = "AH"
+program1_bærer = program1_kode + program1_bærertype
+
+program2_kode = "ODRP20002101"
+program2_bærertype = "AB"
+program2_bærer = "ODRP20002101AB"
+
+program3_kode = program1_kode
+program3_bærer = program3_kode + "AA"
+
+programmer = [
+    {"kode": program1_kode,
+        "bærertype": program1_bærertype,
+        "bærer": program1_bærer},
+     {"kode": program2_kode,
+        "bærertype": program2_bærertype,
+        "bærer": program2_bærer},
+     {"kode": program3_kode,
+        "bærertype": program3_bærer[-2:],
+        "bærer": program3_bærer}]
+
+print(programmer)
